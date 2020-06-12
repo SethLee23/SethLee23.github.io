@@ -1,0 +1,22 @@
+{
+  "name": "vuepress-blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SethLee23/vuepress-blog.git",
+  "author": "seth <1532084282@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.2.0"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "commit": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
