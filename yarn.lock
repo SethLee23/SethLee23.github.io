@@ -782,7 +782,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.8.4", "@babel/runtime@^7.9.6":
+"@babel/runtime@^7.3.4", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.6":
   version "7.10.2"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.10.2.tgz?cache=0&sync_timestamp=1590868599772&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.10.2.tgz#d103f21f2602497d38348a32e008637d506db839"
   integrity sha1-0QPyHyYCSX04NIoy4AhjfVBtuDk=
@@ -849,6 +849,38 @@
     lodash "4.17.15"
     resolve-from "^5.0.0"
     resolve-global "^1.0.0"
+
+"@hapi/address@2.x.x":
+  version "2.1.4"
+  resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
+  integrity sha1-XWftQ/P9QaadS5/3tW58DR0KgeU=
+
+"@hapi/bourne@1.x.x":
+  version "1.3.2"
+  resolved "https://registry.npm.taobao.org/@hapi/bourne/download/@hapi/bourne-1.3.2.tgz#0a7095adea067243ce3283e1b56b8a8f453b242a"
+  integrity sha1-CnCVreoGckPOMoPhtWuKj0U7JCo=
+
+"@hapi/hoek@8.x.x", "@hapi/hoek@^8.3.0":
+  version "8.5.1"
+  resolved "https://registry.npm.taobao.org/@hapi/hoek/download/@hapi/hoek-8.5.1.tgz#fde96064ca446dec8c55a8c2f130957b070c6e06"
+  integrity sha1-/elgZMpEbeyMVajC8TCVewcMbgY=
+
+"@hapi/joi@^15.0.0":
+  version "15.1.1"
+  resolved "https://registry.npm.taobao.org/@hapi/joi/download/@hapi/joi-15.1.1.tgz#c675b8a71296f02833f8d6d243b34c57b8ce19d7"
+  integrity sha1-xnW4pxKW8Cgz+NbSQ7NMV7jOGdc=
+  dependencies:
+    "@hapi/address" "2.x.x"
+    "@hapi/bourne" "1.x.x"
+    "@hapi/hoek" "8.x.x"
+    "@hapi/topo" "3.x.x"
+
+"@hapi/topo@3.x.x":
+  version "3.1.6"
+  resolved "https://registry.npm.taobao.org/@hapi/topo/download/@hapi/topo-3.1.6.tgz#68d935fa3eae7fdd5ab0d7f953f3205d8b2bfc29"
+  integrity sha1-aNk1+j6uf91asNf5U/MgXYsr/Ck=
+  dependencies:
+    "@hapi/hoek" "^8.3.0"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1155,6 +1187,15 @@
     "@vuepress/shared-utils" "^1.0.0"
     register-service-worker "^1.5.2"
     workbox-build "^3.1.0"
+
+"@vuepress/plugin-pwa@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.npm.taobao.org/@vuepress/plugin-pwa/download/@vuepress/plugin-pwa-1.5.1.tgz#95949e1270bfb7c5338b6bb924f3433bee1d043e"
+  integrity sha1-lZSeEnC/t8Uzi2u5JPNDO+4dBD4=
+  dependencies:
+    "@vuepress/shared-utils" "1.5.1"
+    register-service-worker "^1.7.0"
+    workbox-build "^4.3.1"
 
 "@vuepress/plugin-register-components@1.5.1":
   version "1.5.1"
@@ -2399,7 +2440,7 @@ commitizen@^4.0.3:
     strip-bom "4.0.0"
     strip-json-comments "3.0.1"
 
-common-tags@^1.4.0:
+common-tags@^1.4.0, common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.npm.taobao.org/common-tags/download/common-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
   integrity sha1-jjFT5ULUo56bEFVENK+q+YlWqTc=
@@ -6431,6 +6472,11 @@ pretty-bytes@^4.0.2:
   resolved "https://registry.npm.taobao.org/pretty-bytes/download/pretty-bytes-4.0.2.tgz#b2bf82e7350d65c6c33aa95aaa5a4f6327f61cd9"
   integrity sha1-sr+C5zUNZcbDOqlaqlpPYyf2HNk=
 
+pretty-bytes@^5.1.0:
+  version "5.3.0"
+  resolved "https://registry.npm.taobao.org/pretty-bytes/download/pretty-bytes-5.3.0.tgz#f2849e27db79fb4d6cfe24764fc4134f165989f2"
+  integrity sha1-8oSeJ9t5+01s/iR2T8QTTxZZifI=
+
 pretty-error@^2.0.2:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/pretty-error/download/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
@@ -6749,7 +6795,7 @@ regexpu-core@^4.7.0:
     unicode-match-property-ecmascript "^1.0.4"
     unicode-match-property-value-ecmascript "^1.2.0"
 
-register-service-worker@^1.5.2:
+register-service-worker@^1.5.2, register-service-worker@^1.7.0:
   version "1.7.1"
   resolved "https://registry.npm.taobao.org/register-service-worker/download/register-service-worker-1.7.1.tgz#6308347ac6c0af0f6c0b22ea5d59d25e836bc932"
   integrity sha1-Ywg0esbArw9sCyLqXVnSXoNryTI=
@@ -7523,7 +7569,7 @@ string_decoder@~1.1.1:
   dependencies:
     safe-buffer "~5.1.0"
 
-stringify-object@^3.2.2:
+stringify-object@^3.2.2, stringify-object@^3.3.0:
   version "3.3.0"
   resolved "https://registry.npm.taobao.org/stringify-object/download/stringify-object-3.3.0.tgz#703065aefca19300d3ce88af4f5b3956d7556629"
   integrity sha1-cDBlrvyhkwDTzoivT1s5VtdVZik=
@@ -8310,6 +8356,11 @@ vuepress-plugin-mailchimp@^1.4.1:
     jsonp "^0.2.1"
     query-string "^6.9.0"
 
+vuepress-plugin-seo@^0.1.3:
+  version "0.1.3"
+  resolved "https://registry.npm.taobao.org/vuepress-plugin-seo/download/vuepress-plugin-seo-0.1.3.tgz#776cb73e9d364de2e3fcddfe15f21c00b708b2ec"
+  integrity sha1-d2y3Pp02TeLj/N3+FfIcALcIsuw=
+
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npm.taobao.org/vuepress-plugin-sitemap/download/vuepress-plugin-sitemap-2.3.1.tgz#51298aca77a5de96396fdbd1103e1637dd61ae6a"
@@ -8571,12 +8622,26 @@ workbox-background-sync@^3.6.3:
   dependencies:
     workbox-core "^3.6.3"
 
+workbox-background-sync@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-background-sync/download/workbox-background-sync-4.3.1.tgz#26821b9bf16e9e37fd1d640289edddc08afd1950"
+  integrity sha1-JoIbm/Funjf9HWQCie3dwIr9GVA=
+  dependencies:
+    workbox-core "^4.3.1"
+
 workbox-broadcast-cache-update@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-broadcast-cache-update/download/workbox-broadcast-cache-update-3.6.3.tgz#3f5dff22ada8c93e397fb38c1dc100606a7b92da"
   integrity sha1-P13/Iq2oyT45f7OMHcEAYGp7kto=
   dependencies:
     workbox-core "^3.6.3"
+
+workbox-broadcast-update@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-broadcast-update/download/workbox-broadcast-update-4.3.1.tgz#e2c0280b149e3a504983b757606ad041f332c35b"
+  integrity sha1-4sAoCxSeOlBJg7dXYGrQQfMyw1s=
+  dependencies:
+    workbox-core "^4.3.1"
 
 workbox-build@^3.1.0:
   version "3.6.3"
@@ -8606,6 +8671,35 @@ workbox-build@^3.1.0:
     workbox-streams "^3.6.3"
     workbox-sw "^3.6.3"
 
+workbox-build@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-build/download/workbox-build-4.3.1.tgz#414f70fb4d6de47f6538608b80ec52412d233e64"
+  integrity sha1-QU9w+01t5H9lOGCLgOxSQS0jPmQ=
+  dependencies:
+    "@babel/runtime" "^7.3.4"
+    "@hapi/joi" "^15.0.0"
+    common-tags "^1.8.0"
+    fs-extra "^4.0.2"
+    glob "^7.1.3"
+    lodash.template "^4.4.0"
+    pretty-bytes "^5.1.0"
+    stringify-object "^3.3.0"
+    strip-comments "^1.0.2"
+    workbox-background-sync "^4.3.1"
+    workbox-broadcast-update "^4.3.1"
+    workbox-cacheable-response "^4.3.1"
+    workbox-core "^4.3.1"
+    workbox-expiration "^4.3.1"
+    workbox-google-analytics "^4.3.1"
+    workbox-navigation-preload "^4.3.1"
+    workbox-precaching "^4.3.1"
+    workbox-range-requests "^4.3.1"
+    workbox-routing "^4.3.1"
+    workbox-strategies "^4.3.1"
+    workbox-streams "^4.3.1"
+    workbox-sw "^4.3.1"
+    workbox-window "^4.3.1"
+
 workbox-cache-expiration@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-cache-expiration/download/workbox-cache-expiration-3.6.3.tgz#4819697254a72098a13f94b594325a28a1e90372"
@@ -8620,10 +8714,29 @@ workbox-cacheable-response@^3.6.3:
   dependencies:
     workbox-core "^3.6.3"
 
+workbox-cacheable-response@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-cacheable-response/download/workbox-cacheable-response-4.3.1.tgz#f53e079179c095a3f19e5313b284975c91428c91"
+  integrity sha1-9T4HkXnAlaPxnlMTsoSXXJFCjJE=
+  dependencies:
+    workbox-core "^4.3.1"
+
 workbox-core@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-core/download/workbox-core-3.6.3.tgz?cache=0&sync_timestamp=1587741757861&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fworkbox-core%2Fdownload%2Fworkbox-core-3.6.3.tgz#69abba70a4f3f2a5c059295a6f3b7c62bd00e15c"
   integrity sha1-aau6cKTz8qXAWSlabzt8Yr0A4Vw=
+
+workbox-core@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-core/download/workbox-core-4.3.1.tgz#005d2c6a06a171437afd6ca2904a5727ecd73be6"
+  integrity sha1-AF0sagahcUN6/WyikEpXJ+zXO+Y=
+
+workbox-expiration@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-expiration/download/workbox-expiration-4.3.1.tgz#d790433562029e56837f341d7f553c4a78ebe921"
+  integrity sha1-15BDNWICnlaDfzQdf1U8Snjr6SE=
+  dependencies:
+    workbox-core "^4.3.1"
 
 workbox-google-analytics@^3.6.3:
   version "3.6.3"
@@ -8635,12 +8748,29 @@ workbox-google-analytics@^3.6.3:
     workbox-routing "^3.6.3"
     workbox-strategies "^3.6.3"
 
+workbox-google-analytics@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-google-analytics/download/workbox-google-analytics-4.3.1.tgz#9eda0183b103890b5c256e6f4ea15a1f1548519a"
+  integrity sha1-ntoBg7EDiQtcJW5vTqFaHxVIUZo=
+  dependencies:
+    workbox-background-sync "^4.3.1"
+    workbox-core "^4.3.1"
+    workbox-routing "^4.3.1"
+    workbox-strategies "^4.3.1"
+
 workbox-navigation-preload@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-navigation-preload/download/workbox-navigation-preload-3.6.3.tgz?cache=0&sync_timestamp=1587741759034&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fworkbox-navigation-preload%2Fdownload%2Fworkbox-navigation-preload-3.6.3.tgz#a2c34eb7c17e7485b795125091215f757b3c4964"
   integrity sha1-osNOt8F+dIW3lRJQkSFfdXs8SWQ=
   dependencies:
     workbox-core "^3.6.3"
+
+workbox-navigation-preload@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-navigation-preload/download/workbox-navigation-preload-4.3.1.tgz#29c8e4db5843803b34cd96dc155f9ebd9afa453d"
+  integrity sha1-Kcjk21hDgDs0zZbcFV+evZr6RT0=
+  dependencies:
+    workbox-core "^4.3.1"
 
 workbox-precaching@^3.6.3:
   version "3.6.3"
@@ -8649,12 +8779,26 @@ workbox-precaching@^3.6.3:
   dependencies:
     workbox-core "^3.6.3"
 
+workbox-precaching@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-precaching/download/workbox-precaching-4.3.1.tgz#9fc45ed122d94bbe1f0ea9584ff5940960771cba"
+  integrity sha1-n8Re0SLZS74fDqlYT/WUCWB3HLo=
+  dependencies:
+    workbox-core "^4.3.1"
+
 workbox-range-requests@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-range-requests/download/workbox-range-requests-3.6.3.tgz?cache=0&sync_timestamp=1587741759510&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fworkbox-range-requests%2Fdownload%2Fworkbox-range-requests-3.6.3.tgz#3cc21cba31f2dd8c43c52a196bcc8f6cdbcde803"
   integrity sha1-PMIcujHy3YxDxSoZa8yPbNvN6AM=
   dependencies:
     workbox-core "^3.6.3"
+
+workbox-range-requests@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-range-requests/download/workbox-range-requests-4.3.1.tgz#f8a470188922145cbf0c09a9a2d5e35645244e74"
+  integrity sha1-+KRwGIkiFFy/DAmpotXjVkUkTnQ=
+  dependencies:
+    workbox-core "^4.3.1"
 
 workbox-routing@^3.6.3:
   version "3.6.3"
@@ -8663,12 +8807,26 @@ workbox-routing@^3.6.3:
   dependencies:
     workbox-core "^3.6.3"
 
+workbox-routing@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-routing/download/workbox-routing-4.3.1.tgz#a675841af623e0bb0c67ce4ed8e724ac0bed0cda"
+  integrity sha1-pnWEGvYj4LsMZ85O2OckrAvtDNo=
+  dependencies:
+    workbox-core "^4.3.1"
+
 workbox-strategies@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-strategies/download/workbox-strategies-3.6.3.tgz?cache=0&sync_timestamp=1587741759852&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fworkbox-strategies%2Fdownload%2Fworkbox-strategies-3.6.3.tgz#11a0dc249a7bc23d3465ec1322d28fa6643d64a0"
   integrity sha1-EaDcJJp7wj00ZewTItKPpmQ9ZKA=
   dependencies:
     workbox-core "^3.6.3"
+
+workbox-strategies@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-strategies/download/workbox-strategies-4.3.1.tgz#d2be03c4ef214c115e1ab29c9c759c9fe3e9e646"
+  integrity sha1-0r4DxO8hTBFeGrKcnHWcn+Pp5kY=
+  dependencies:
+    workbox-core "^4.3.1"
 
 workbox-streams@^3.6.3:
   version "3.6.3"
@@ -8677,10 +8835,29 @@ workbox-streams@^3.6.3:
   dependencies:
     workbox-core "^3.6.3"
 
+workbox-streams@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-streams/download/workbox-streams-4.3.1.tgz#0b57da70e982572de09c8742dd0cb40a6b7c2cc3"
+  integrity sha1-C1facOmCVy3gnIdC3Qy0Cmt8LMM=
+  dependencies:
+    workbox-core "^4.3.1"
+
 workbox-sw@^3.6.3:
   version "3.6.3"
   resolved "https://registry.npm.taobao.org/workbox-sw/download/workbox-sw-3.6.3.tgz?cache=0&sync_timestamp=1587741757489&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fworkbox-sw%2Fdownload%2Fworkbox-sw-3.6.3.tgz#278ea4c1831b92bbe2d420da8399176c4b2789ff"
   integrity sha1-J46kwYMbkrvi1CDag5kXbEsnif8=
+
+workbox-sw@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-sw/download/workbox-sw-4.3.1.tgz#df69e395c479ef4d14499372bcd84c0f5e246164"
+  integrity sha1-32njlcR5700USZNyvNhMD14kYWQ=
+
+workbox-window@^4.3.1:
+  version "4.3.1"
+  resolved "https://registry.npm.taobao.org/workbox-window/download/workbox-window-4.3.1.tgz#ee6051bf10f06afa5483c9b8dfa0531994ede0f3"
+  integrity sha1-7mBRvxDwavpUg8m436BTGZTt4PM=
+  dependencies:
+    workbox-core "^4.3.1"
 
 worker-farm@^1.7.0:
   version "1.7.0"
