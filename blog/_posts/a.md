@@ -1,6 +1,6 @@
 ---
-title: Vuepress 搭建博客
-date: 2020-06-13
+title: Vuepress 搭建博客集成PWA,Vssue,谷歌分析,SEO,Travis Ci
+date: 2020-06-14
 author: seth
 location: Wuhan 
 tags: 
@@ -11,9 +11,9 @@ tags:
 siderbar: 'auto'
 ---
 
-<ClientOnly>
+<!-- <ClientOnly>
   <demo/>
-</ClientOnly>
+</ClientOnly> -->
 
 > 搭建vuepress博客
 
@@ -29,8 +29,7 @@ siderbar: 'auto'
 | 5             |   接入谷歌分析    |plugin-google-analytics|
 
 
-> 用于测试
 
 <ClientOnly>
-<Vssue :title="$title" />
+  <Vssue :title="$title" />
 </ClientOnly>

@@ -1,6 +1,7 @@
 const headConfig =  [
   ['link', { rel: 'icon', href: '/assets/img/favicon.ico' }],
   ['meta', { name: 'keywords', content: '博客, Vuepress, Seth, 技术' }],
+  ['meta', { name: 'baidu-site-verification', content: 'eA8vmXZFiJ' }],
   ['meta', { name: 'author', content: 'Seth' }],
   //配置pwa
   ['link', { rel: 'manifest', href: '/manifest.json' }],

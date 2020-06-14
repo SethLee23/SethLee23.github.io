@@ -1,5 +1,8 @@
 const secret = require('./secret')
 const pluginConfig = [
+  ['sitemap', {
+    hostname: 'https://sethlee.site'
+  }],
   ["vuepress-plugin-auto-sidebar"],
   ['@vuepress/medium-zoom',{
     selector: 'img.zoom-custom-imgs',
@@ -42,17 +45,17 @@ const pluginConfig = [
     }
   }
   ],
-  [
-    '@vuepress/last-updated',
-    {
-      transformer: (timestamp, lang) => {
-        // 不要忘了安装 moment
-        const moment = require('moment')
-        moment.locale('zh-cn')
-        return moment().format('lll')
-      }
-    }
-  ],
+  // [
+  //   '@vuepress/last-updated',
+  //   {
+  //     transformer: (timestamp, lang) => {
+  //       // 不要忘了安装 moment
+  //       const moment = require('moment')
+  //       moment.locale('zh-cn')
+  //       return moment().format('lll')
+  //     }
+  //   }
+  // ],
   // 配置seo
   ['seo', {
     siteTitle: (_, $site) => $site.title,
