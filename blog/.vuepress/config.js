@@ -8,7 +8,7 @@ module.exports = {
   "frontmatter": {
     "sidebar": "auto"
   },
-  
+
   head: headConfig,
   plugins: pluginConfig,
 
@@ -34,7 +34,7 @@ module.exports = {
     //     ]
     //   },
     // ],
-    sidebar: 'auto',
+    // sidebar: 'auto',
     lastUpdated: '上次更新时间',//上次更新时间
     // Please keep looking down to see the available options.
   },

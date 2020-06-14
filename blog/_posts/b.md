@@ -10,9 +10,9 @@ tags:
 
 siderbar: 'auto'
 ---
-<img :src="$withBase('/favicon.ico')" alt="foo">
+<img :src="$withBase('/assets/img/favicon.ico')" alt="foo" class="zoom-custom-imgs">
 
-![An image](/favicon.ico)
+![An image](/assets/img/favicon.ico)
 
 <ClientOnly>
 <Vssue title="发布评论" />

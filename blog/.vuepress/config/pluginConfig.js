@@ -1,6 +1,14 @@
 const secret = require('./secret')
 const pluginConfig = [
-  ['@vuepress/medium-zoom'],
+  ["vuepress-plugin-auto-sidebar"],
+  ['@vuepress/medium-zoom',{
+    selector: 'img.zoom-custom-imgs',
+    // medium-zoom options here
+    // See: https://github.com/francoischalifour/medium-zoom#options
+    options: {
+      margin: 16
+    }
+  }],
   // 谷歌分析
   [
     '@vuepress/google-analytics',
