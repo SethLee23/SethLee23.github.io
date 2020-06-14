@@ -1,5 +1,6 @@
 const secret = require('./secret')
 const pluginConfig = [
+  ['@vuepress/medium-zoom'],
   // 谷歌分析
   [
     '@vuepress/google-analytics',

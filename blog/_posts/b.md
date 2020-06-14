@@ -1,8 +1,8 @@
 ---
-title: Hello World
-date: 2020-01-12
-author: Billyyyyy3320
-location: Taipei  
+title: 引入图片
+date: 2020-06-14
+author: Seth
+location: Wuhan
 tags: 
 
   - JavaScript
@@ -10,12 +10,9 @@ tags:
 
 siderbar: 'auto'
 ---
+<img :src="$withBase('/favicon.ico')" alt="foo">
 
-## 测试
-
-## 测试PWA
-
-## 测试PWAdi
+![An image](/favicon.ico)
 
 <ClientOnly>
 <Vssue title="发布评论" />
