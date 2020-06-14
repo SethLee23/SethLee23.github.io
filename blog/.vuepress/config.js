@@ -48,6 +48,8 @@ module.exports = {
     // Please keep looking down to see the available options.
   },
   plugins: [
+    // 回到顶部
+    ['@vuepress/back-to-top'],
     //配置评论
     [
       '@vssue/vuepress-plugin-vssue',{
@@ -59,6 +61,8 @@ module.exports = {
         repo: 'vuepress-blog',
         clientId: 'f155013196f57ca349b6',
         clientSecret: '4010ca4573199c9b5013043d67c017e110bb0f9e',
+        autoCreateIssue: true,
+        locale: 'zh-CN'
       },
     ],
     // 配置pwa
