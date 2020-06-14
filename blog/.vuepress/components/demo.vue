@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="test">这是一个组件</div>
-    <div class="test">这是一个组件</div>
-    <div class="test">这是一个组件</div>
+    <div class="test">这是一个呼呼组件</div>
+    <div class="test">这是一个hahahahahaah组件</div>
+    <div class="test">这是一个wuwuwuwuw组件</div>
   </div>
 </template>
 
