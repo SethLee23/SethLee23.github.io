@@ -10,7 +10,6 @@ tags:
   - Vssue
 siderbar: 'auto'
 ---
-12121212121212121212121
 
 <ClientOnly>
   <demo/>
@@ -29,9 +28,8 @@ siderbar: 'auto'
 | 4             |   回到顶部    |plugin-back-to-top|
 | 5             |   接入谷歌分析    |plugin-google-analytics|
 
-My content.
 
-> This is official blog theme.
+> 用于测试
 
 <ClientOnly>
 <Vssue :title="$title" />

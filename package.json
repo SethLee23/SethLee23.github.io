@@ -18,6 +18,7 @@
     "dev": "vuepress dev blog",
     "build": "vuepress build blog",
     "deploy": "bash deploy.sh",
+    "cname": "bash cname.sh",
     "commit": "git-cz",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
