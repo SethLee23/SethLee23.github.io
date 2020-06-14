@@ -18,7 +18,8 @@
     "build": "vuepress build blog",
     "deploy": "bash deploy.sh",
     "commit": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+    
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "config": {
     "commitizen": {
