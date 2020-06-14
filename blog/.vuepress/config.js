@@ -48,6 +48,13 @@ module.exports = {
     // Please keep looking down to see the available options.
   },
   plugins: [
+    // 谷歌分析
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-169294301-1' // UA-00000000-0
+      }
+    ],
     // 回到顶部
     ['@vuepress/back-to-top'],
     //配置评论

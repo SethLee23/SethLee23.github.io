@@ -12,6 +12,7 @@
 * init blog ([8aed609](https://github.com/SethLee23/vuepress-blog/commit/8aed6095c0c2ea3faadcc1a916a718917cadd294))
 * test ([91ab572](https://github.com/SethLee23/vuepress-blog/commit/91ab5727eb84f58d82b55cc76a7032361cf42ef8))
 * 更换主题色，添加回到顶部 ([2e948a5](https://github.com/SethLee23/vuepress-blog/commit/2e948a52166fcbb21856bf06aa24ac2a2ea4e010))
+* 生成changelog ([d792f3e](https://github.com/SethLee23/vuepress-blog/commit/d792f3e6dcf90dbcf4d36449699620dee73432dd))
 
 
 
