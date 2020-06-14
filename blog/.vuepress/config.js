@@ -48,6 +48,20 @@ module.exports = {
     // Please keep looking down to see the available options.
   },
   plugins: [
+    //配置评论
+    [
+      '@vssue/vuepress-plugin-vssue',{
+        // 设置 `platform` 而不是 `api`
+        platform: 'github-v4',
+
+        // 其他的 Vssue 配置
+        owner: 'SethLee23',
+        repo: 'vuepress-blog',
+        clientId: 'f155013196f57ca349b6',
+        clientSecret: '4010ca4573199c9b5013043d67c017e110bb0f9e',
+      },
+    ],
+    // 配置pwa
     ['@vuepress/pwa', {
       serviceWorker: true,
       updatePopup: {
@@ -67,6 +81,7 @@ module.exports = {
         }
       }
     ],
+    // 配置seo
     ['seo', {
       siteTitle: (_, $site) => $site.title,
       title: $page => $page.title,

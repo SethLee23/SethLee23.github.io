@@ -4,8 +4,10 @@ date: 2020-06-13
 author: seth
 location: Wuhan 
 tags: 
-  - JavaScript
-  - Vue
+
+  + JavaScript
+  + Vue
+
 siderbar: 'auto'
 ---
 12121212121212121212121
@@ -17,6 +19,7 @@ siderbar: 'auto'
 > This is official blog theme.
 
 My content.
+
 > This is official blog theme.
 
 My content.> This is official blog theme.
@@ -52,3 +55,6 @@ My content.> This is official blog theme.
 My content.> This is official blog theme.
 
 My content.
+<ClientOnly>
+<Vssue :title="$title" />
+</ClientOnly>
