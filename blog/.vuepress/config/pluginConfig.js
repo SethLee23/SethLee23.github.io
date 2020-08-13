@@ -4,7 +4,7 @@ const pluginConfig = [
     hostname: 'https://sethlee.site'
   }],
   ["vuepress-plugin-auto-sidebar"],
-  ['@vuepress/medium-zoom',{
+  ['@vuepress/medium-zoom', {
     selector: 'img.zoom-custom-imgs',
     // medium-zoom options here
     // See: https://github.com/francoischalifour/medium-zoom#options
@@ -23,7 +23,7 @@ const pluginConfig = [
   ['@vuepress/back-to-top'],
   //配置评论
   [
-    '@vssue/vuepress-plugin-vssue',{
+    '@vssue/vuepress-plugin-vssue', {
       // 设置 `platform` 而不是 `api`
       platform: 'github-v4',
 
@@ -63,7 +63,8 @@ const pluginConfig = [
     description: $page => $page.frontmatter.description,
     author: (_, $site) => $site.themeConfig.author,
     tags: $page => $page.frontmatter.tags,
-    twitterCard: _ => 'seth前端博客',
+    // twitterCard: _ => 'seth前端博客',
+    twitterCard: _ => 'summary',
     type: $page => ['articles', 'posts', 'blog'].some(folder => $page.regularPath.startsWith('/' + folder)) ? 'article' : 'website',
     url: (_, $site, path) => ($site.themeConfig.domain || '') + path,
     image: ($page, $site) => $page.frontmatter.image && (($site.themeConfig.domain && !$page.frontmatter.image.startsWith('http') || '') + $page.frontmatter.image),
