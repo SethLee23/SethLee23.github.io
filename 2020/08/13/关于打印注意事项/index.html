@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>关于打印测试 | seth&#39;s blog</title>
+    <meta name="generator" content="VuePress 1.5.1">
+    <link rel="icon" href="/assets/img/favicon.ico">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon/apple-icon-152x152-dunplab-manifest-1314.png">
+    <meta name="description" content="
+无法打印滚动条下的内容
+   由于 body 被设置为了 overflow:hidden,打印时高度调整为 auto
+   在打印时调整为以下内容即可
+`js
+document.body.style.overflowX = 'auto';
+document.body.style.height = 'auto';
+window.print();
+document. ...">
+    <meta property="article:published_time" content="2020-08-13T00:00:00.000Z">
+    <meta property="article:modified_time" content="2021-02-09T09:55:44.000Z">
+    <meta property="og:site_name" content="seth's blog">
+    <meta property="og:title" content="关于打印测试">
+    <meta property="og:description" content="
+无法打印滚动条下的内容
+   由于 body 被设置为了 overflow:hidden,打印时高度调整为 auto
+   在打印时调整为以下内容即可
+`js
+document.body.style.overflowX = 'auto';
+document.body.style.height = 'auto';
+window.print();
+document. ...">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/2020/08/13/%E5%85%B3%E4%BA%8E%E6%89%93%E5%8D%B0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
+    <meta name="twitter:title" content="关于打印测试">
+    <meta name="twitter:description" content="
+无法打印滚动条下的内容
+   由于 body 被设置为了 overflow:hidden,打印时高度调整为 auto
+   在打印时调整为以下内容即可
+`js
+document.body.style.overflowX = 'auto';
+document.body.style.height = 'auto';
+window.print();
+document. ...">
+    <meta name="twitter:url" content="/2020/08/13/%E5%85%B3%E4%BA%8E%E6%89%93%E5%8D%B0%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="js">
+    <meta property="article:tag" content="js">
+    <meta name="keywords" content="博客, Vuepress, Seth, 技术">
+    <meta name="baidu-site-verification" content="eA8vmXZFiJ">
+    <meta name="author" content="Seth">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/apple-icon-144x144-dunplab-manifest-1314.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    <link rel="preload" href="/assets/css/0.styles.fea375a4.css" as="style"><link rel="preload" href="/assets/js/app.8baaf182.js" as="script"><link rel="preload" href="/assets/js/6.31825f4c.js" as="script"><link rel="preload" href="/assets/js/3.84e94218.js" as="script"><link rel="preload" href="/assets/js/14.38780ef8.js" as="script"><link rel="preload" href="/assets/js/7.ab15836a.js" as="script"><link rel="prefetch" href="/assets/js/10.60a917eb.js"><link rel="prefetch" href="/assets/js/11.dc635c3e.js"><link rel="prefetch" href="/assets/js/12.7dc54b94.js"><link rel="prefetch" href="/assets/js/13.e43b27bc.js"><link rel="prefetch" href="/assets/js/15.6e84b14f.js"><link rel="prefetch" href="/assets/js/16.56df5765.js"><link rel="prefetch" href="/assets/js/17.61074d3f.js"><link rel="prefetch" href="/assets/js/4.cc55c3b8.js"><link rel="prefetch" href="/assets/js/5.449f2c68.js"><link rel="prefetch" href="/assets/js/8.6cbcdf4a.js"><link rel="prefetch" href="/assets/js/9.02368342.js"><link rel="prefetch" href="/assets/js/vuejs-paginate.924fa262.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.fea375a4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div id="vuepress-theme-blog__global-layout"><section id="header-wrapper"><header id="header"><div class="header-wrapper"><div class="title"><a href="/" class="nav-link home-link">seth's blog </a></div> <div class="header-right-wrap"><ul class="nav"><li class="nav-item"><a href="/" class="nav-link">Blog</a></li><li class="nav-item"><a href="/tag/" class="nav-link">Tags</a></li></ul> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></div></header></section> <div id="mobile-header"><div class="mobile-header-bar"><div class="mobile-header-title"><a href="/" class="nav-link mobile-home-link">seth's blog </a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></div> <div class="mobile-menu-wrapper"><hr class="menu-divider"> <ul class="mobile-nav"><li class="mobile-nav-item"><a href="/" class="nav-link">Blog</a></li><li class="mobile-nav-item"><a href="/tag/" class="nav-link">Tags</a></li> <li class="mobile-nav-item"><!----></li></ul></div></div></div> <div class="content-wrapper"><div id="vuepress-theme-blog__post-layout"><article itemscope="itemscope" itemtype="https://schema.org/BlogPosting" class="vuepress-blog-theme-content"><header><h1 itemprop="name headline" class="post-title">
+        关于打印测试
+      </h1> <div class="post-meta"><div itemprop="publisher author" itemtype="http://schema.org/Person" itemscope="itemscope" class="post-meta-author"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-navigation"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg> <span itemprop="name">seth</span> <span itemprop="address">   in Wuhan</span></div> <div class="post-meta-date"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> <time pubdate itemprop="datePublished" datetime="2020-08-13T00:00:00.000Z">
+      Thu Aug 13 2020
+    </time></div> <ul itemprop="keywords" class="post-meta-tags"><li class="post-tag" data-v-d832e844><a href="/tag/js" data-v-d832e844> js </a></li></ul></div></header> <div itemprop="articleBody" class="content__default"><h2 id="关于打印测试"><a href="#关于打印测试" class="header-anchor">#</a> 关于打印测试</h2> <ol><li>无法打印滚动条下的内容
+由于 body 被设置为了 overflow:hidden,打印时高度调整为 auto
+在打印时调整为以下内容即可</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>overflowX <span class="token operator">=</span> <span class="token string">'auto'</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">'auto'</span><span class="token punctuation">;</span>
+window<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>overflowX <span class="token operator">=</span> <span class="token string">'hidden'</span><span class="token punctuation">;</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">'100%'</span><span class="token punctuation">;</span>
+</code></pre></div><ol start="2"><li>table 打印无法自动换行</li></ol> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">table</span> <span class="token punctuation">{</span>
+  <span class="token property">page-break-inside</span><span class="token punctuation">:</span> auto <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">tr</span> <span class="token punctuation">{</span>
+  <span class="token property">page-break-inside</span><span class="token punctuation">:</span> avoid <span class="token important">!important</span><span class="token punctuation">;</span>
+  <span class="token property">page-break-after</span><span class="token punctuation">:</span> auto <span class="token important">!important</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
+  <span class="token property">overflow</span><span class="token punctuation">:</span> visible<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="3"><li>去除页眉和页脚</li></ol> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@page</span></span> <span class="token punctuation">{</span>
+  <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 0mm<span class="token punctuation">;</span>
+  <span class="token property">margin-top</span><span class="token punctuation">:</span> 0mm<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ol start="4"><li>打印页面中的部分元素</li></ol> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>overflow <span class="token operator">=</span> <span class="token string">'visible'</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> prtHtml <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'printEle'</span><span class="token punctuation">)</span><span class="token punctuation">.</span>innerHTML<span class="token punctuation">;</span>
+      <span class="token comment">// Get all stylesheets HTML</span>
+      <span class="token keyword">let</span> stylesHtml <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+      <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">const</span> node <span class="token keyword">of</span> <span class="token punctuation">[</span><span class="token operator">...</span>document<span class="token punctuation">.</span><span class="token function">querySelectorAll</span><span class="token punctuation">(</span><span class="token string">'link[rel=&quot;stylesheet&quot;], style'</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        stylesHtml <span class="token operator">+=</span> node<span class="token punctuation">.</span>outerHTML<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// 将样式表及相关内容直接打印在iframe上</span>
+      <span class="token keyword">const</span> WinPrint <span class="token operator">=</span> window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">,</span> <span class="token string">'left=0,top=0,toolbar=0,scrollbars=0,status=0'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      WinPrint<span class="token punctuation">.</span>document<span class="token punctuation">.</span><span class="token function">write</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">&lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>stylesHtml<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+        &lt;/head&gt;
+        &lt;body&gt;
+          </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>prtHtml<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">
+        &lt;/body&gt;
+      &lt;/html&gt;</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      WinPrint<span class="token punctuation">.</span>document<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      WinPrint<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      WinPrint<span class="token punctuation">.</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      WinPrint<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>overflowX <span class="token operator">=</span> <span class="token string">'hidden'</span><span class="token punctuation">;</span>
+      document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token string">'100%'</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></div> <footer><!----> <hr> <!----></footer></article> <div class="sticker vuepress-toc"><div class="vuepress-toc-item vuepress-toc-h2 active"><a href="#关于打印测试" title="关于打印测试">关于打印测试</a></div></div></div></div> <footer class="footer" data-v-fdbf4940><div class="footer-left-wrap" data-v-fdbf4940><ul class="contact" data-v-fdbf4940></ul></div> <div class="footer-right-wrap" data-v-fdbf4940><ul class="copyright" data-v-fdbf4940></ul></div></footer></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.8baaf182.js" defer></script><script src="/assets/js/6.31825f4c.js" defer></script><script src="/assets/js/3.84e94218.js" defer></script><script src="/assets/js/14.38780ef8.js" defer></script><script src="/assets/js/7.ab15836a.js" defer></script>
+  </body>
+</html>
